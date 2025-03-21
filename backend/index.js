@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 
 app.get("/api/fetchlanguage", async (req, res) => {
-    const ip = "45.14.233.209"
+    const ip = req.ip
 
     if (ip === "127.0.0.1" || ip === "::1") {
         return next()
