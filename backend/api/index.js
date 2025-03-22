@@ -8,7 +8,7 @@ app.use(cors())
 
 app.get("/api/fetchlanguage", async (req, res) => {
     try {
-        const ip = req.ip
+        const ip = req.headers["x-forwarded-for"]
 
         if (ip === "127.0.0.1" || ip === "::1") {
             return next()
