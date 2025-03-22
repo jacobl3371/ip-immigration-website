@@ -22,7 +22,7 @@ app.get("/api/fetchlanguage", async (req, res) => {
         const data = await response.json()
         return res.json({ language: data.countryCode.toLowerCase()})
     }
-    catch {
+    catch (error) {
         return res.json({ error: error.message })
     }
 })
