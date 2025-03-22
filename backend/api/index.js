@@ -24,4 +24,4 @@ app.get("/api/fetchlanguage", async (req, res) => {
 
 app.listen(5000)
 
-module.exports = app;
+export default app
