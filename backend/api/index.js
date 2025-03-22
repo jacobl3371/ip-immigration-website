@@ -22,6 +22,6 @@ app.get("/api/fetchlanguage", async (req, res) => {
     return res.json({ language: data.countryCode.toLowerCase()})
 })
 
-app.listen(5000)
+app.listen(3000)
 
 export default app

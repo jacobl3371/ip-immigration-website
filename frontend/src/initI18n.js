@@ -7,7 +7,7 @@ const initI18n = async () => {
     })
 
     try {
-        const response = await fetch("http://localhost:5000/api/fetchlanguage")
+        const response = await fetch("http://localhost:3000/api/fetchlanguage")
         const data = await response.json()
         const lang = data.language
 
