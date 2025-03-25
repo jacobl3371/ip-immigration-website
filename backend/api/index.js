@@ -20,7 +20,7 @@ app.get("/api/fetchlanguage", async (req, res) => {
             throw new Error(`API responded with status ${response.status}`)
         }
         const data = await response.json()
-        return res.json({ language: data.countryCode.toLowerCase()})
+        return res.json({ region: data.countryCode.toLowerCase()})
     }
     catch (error) {
         return res.json({ error: error.message })
