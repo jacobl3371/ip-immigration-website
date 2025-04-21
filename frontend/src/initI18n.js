@@ -30,7 +30,9 @@ const initI18n = async () => {
     });
     if (!languages.includes(lang)) {
       i18next.changeLanguage("us");
+      return 
     }
+
     i18next.changeLanguage(lang);
   } catch (e) {
     console.error(e);
