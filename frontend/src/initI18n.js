@@ -16,9 +16,7 @@ const initI18n = async () => {
     const data = await response.json();
     const lang = data.region;
 
-    if (lang === "us") {
-      return;
-    }
+  
 
     languages.map(async (lang) => {
       const module = await import(`./locales/${lang.code}.json`);
