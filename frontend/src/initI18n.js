@@ -16,8 +16,6 @@ const initI18n = async () => {
     const data = await response.json();
     const lang = data.region;
 
-  
-
     languages.map(async (lang) => {
       const module = await import(`./locales/${lang.code}.json`);
       i18next.addResourceBundle(
@@ -30,7 +28,7 @@ const initI18n = async () => {
       i18next.changeLanguage("us");
       return 
     }
-
+                                                                            
     i18next.changeLanguage(lang);
   } catch (e) {
     console.error(e);

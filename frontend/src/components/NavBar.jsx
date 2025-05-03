@@ -7,13 +7,13 @@ export default function Navbar() {
           <a href={"/about"}>About</a>
         </li>
         <li>
-          <a href={"/idk"}>Resources</a>
+          <a href={"/resources"}>Resources</a>
         </li>
         <li>
-          <a href={"/caleb"}>Stories</a>
+          <a href={"/stories"}>Stories</a>
         </li>
         <li>
-          <a href={"/caleb"}>Process</a>
+          <a href={"/process"}>Process</a>
         </li>
       </ul>
     </nav>

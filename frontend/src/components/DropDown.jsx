@@ -2,8 +2,10 @@ import i18next from "i18next";
 import { languages } from "../locales/lang";
 import { useState } from "react";
 import CustomButton from "./CustomButton";
+import { useTranslation } from "react-i18next";
 
 export default function DropDown() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const changeLang = (lang) => {
     i18next.changeLanguage(lang);
@@ -16,7 +18,7 @@ export default function DropDown() {
       <CustomButton
         className="w-fit text-black"
         onClick={toggleMenu}
-        text="Languages"
+        text={t("langbutton")}
       />
       <div className="absolute top-5 left-32 inline-block text-center align-content: normal">
         <div

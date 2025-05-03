@@ -1,5 +1,6 @@
 {
   "hello": "Hola!",
   "quote": "Somos y siempre seremos una nación de inmigrantes. También éramos extraños.",
-  "picklang": "Por favor seleccione un idioma"
+  "picklang": "Por favor seleccione un idioma",
+  "langbutton": "Idioma"
 }
