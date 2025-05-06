@@ -5,13 +5,13 @@ import CustomButton from "./CustomButton";
 import { useTranslation } from "react-i18next";
 
 export default function DropDown() {
-  const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation()
+  const [isOpen, setIsOpen] = useState(false)
   const changeLang = (lang) => {
-    i18next.changeLanguage(lang);
+    i18next.changeLanguage(lang)
   };
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen)
   };
   return (
     <div className="relative">
