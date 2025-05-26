@@ -5,13 +5,13 @@ import CustomButton from "./CustomButton";
 import { useTranslation } from "react-i18next";
 
 export default function DropDown() {
-  const { t } = useTranslation()
-  const [isOpen, setIsOpen] = useState(false)
+  const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
   const changeLang = (lang) => {
-    i18next.changeLanguage(lang)
+    i18next.changeLanguage(lang);
   };
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
   };
   return (
     <div className="relative">
@@ -24,9 +24,9 @@ export default function DropDown() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          }  mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg`}
+          } mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg`}
         >
-          <ul className="py-1">
+          <ul className="py-1 max-h-60 overflow-y-auto">
             {languages.map((lang, index) => (
               <li
                 key={index}
