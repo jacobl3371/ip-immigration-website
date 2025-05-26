@@ -60,7 +60,7 @@ export const languages = [
     name: "magyar",
   },
   {
-    code: "po",
+    code: "pl",
     name: "Polski",
   },
   {
