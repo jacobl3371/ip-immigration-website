@@ -30,7 +30,7 @@ export default function DropDown() {
             {languages.map((lang, index) => (
               <li
                 key={index}
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                className="block px-4 py-2 h-36 text-gray-700 hover:bg-gray-100 cursor-pointer"
                 onClick={() => changeLang(lang.code)}
               >
                 {lang.name}
