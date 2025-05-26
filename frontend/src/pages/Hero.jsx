@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="relative w-screen h-screen ">
       <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-      <div className="absolute inset-0 bg-[url('/Hero.webp')] bg-cover bg-center bg-no-repeat z-0"></div>
+      <div className="absolute inset-0 bg-[url('/Hero.webp')] bg-cover h-full bg-center bg-no-repeat z-0"></div>
 
       <div className="relative z-20 h-full">
         <Navbar />
