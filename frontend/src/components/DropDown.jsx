@@ -24,7 +24,7 @@ export default function DropDown() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg`}
+          } mt-2 w-48 h-54 bg-white border border-gray-200 rounded-md shadow-lg`}
         >
           <ul className="py-1 max-h-60 overflow-y-auto">
             {languages.map((lang, index) => (
